@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pi"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/nav_friends"
+            android:title="病人列表" />
+        <item
+            android:id="@+id/nav_prescription"
+            android:icon="@drawable/nav_task"
+            android:title="处方集" />
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/notice"
+            android:title="发布消息" />
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/nav_task"
+            android:title="Tasks" />
+    </group>
+</menu>

@@ -1,0 +1,168 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkBlue</item>
+        <item name="colorPrimaryDark">@color/darkBlue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FruitActivityTheme" parent="AppTheme">
+    </style>
+
+    <style name="AppTheme.NoActionBar" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="btn_sign_text_clicked">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="btn_sign_text_default">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:background">@drawable/edit_selector</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">15dp</item>
+
+    </style>
+
+    <style name="searchLinearStyle">
+        <item name="android:background">@drawable/round_rectangle2</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:paddingBottom">0dp</item>
+
+    </style>
+    <style name="searchEditTextStyle">
+
+        <item name="android:textSize">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hint">搜索</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">30dp</item>
+    </style>
+    <style name="textViewStyle">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">15dp</item>
+
+    </style>
+
+    <style name="barTextStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="btnStyle">
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minHeight">30dp</item>
+    </style>
+
+
+
+    <style name="loginTextStyle">
+        <item name="android:textColor">@drawable/clickable_text_selector</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="popBtnStyle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@drawable/clickable_text_selector</item>
+        <item name="android:padding">10dp</item>
+
+    </style>
+
+    <style name="commonAgentStyle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@drawable/clickable_text_selector</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:minHeight">20dp</item>
+    </style>
+    <style name="commonAgentStyle1">
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/darkBlue</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:minHeight">20dp</item>
+    </style>
+
+    <style name="popLinerStyle">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="rptStyle">
+        <item name="android:background">@color/grey</item>
+        <item name="android:textColor">@drawable/clickable_text_selector</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="editTextFieldStyle">
+        <item name="android:background">@drawable/edit_selector</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+
+
+        <item name="android:textSize">15dp</item>
+        <item name="android:minHeight">80dp</item>
+    </style>
+
+    <style name="textViewFieldStyle">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+
+
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:minHeight">80dp</item>
+    </style>
+    <style name="anotherBtnStyle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@drawable/clickable_text_selector</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="learnMoreBtnStyle">
+
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@drawable/round_rectangle2</item>
+        <item name="android:textColor">@drawable/clickable_text_selector</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:minWidth">40dp</item>
+    </style>
+
+</resources>

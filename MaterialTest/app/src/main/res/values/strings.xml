@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">小护士</string>
+
+    <!-- loginActivity -->
+    <string name="login_login">登录</string>
+    <string name="login_user">用户名</string>
+    <string name="login_psd">密 码</string>
+    <string name="login_user_hint">请输入手机号</string>
+    <string name="login_psd_hint">请输入密码</string>
+    <string name="login_forget_psd">忘记密码</string>
+    <string name="login_new_user">新用户注册</string>
+
+    <!-- registerActivity -->
+    <string name="register_bar">新用户注册</string>
+    <string name="register_username">用户名</string>
+    <string name="register_pas">密码</string>
+    <string name="register_confirm_psd">确认密码</string>
+    <string name="register_tel">手机号码</string>
+    <string name="register_verify">验证码</string>
+    <string name="register_get_verify">获取验证码</string>
+    <string name="register_register">注册</string>
+
+    <!--doctorInfoActivity -->
+    <string name="doctorInfo_bar">个人信息</string>
+    <string name="doctorInfo_username">姓名</string>
+    <string name="doctorInfo_sex">性别</string>
+    <string name="doctorInfo_age">年龄</string>
+    <string name="doctorInfo_title">职称</string>
+    <string name="doctorInfo_workTime">工龄</string>
+    <string name="doctorInfo_contact">联系方式</string>
+    <string name="doctorInfo_introduction">个人简介</string>
+    <string name="doctorInfo_restrict">多行输入（至多200字）</string>
+    <string name="doctorInfo_confirm">确认</string>
+
+
+    <string name="doctorInfo_testName">黄思唐</string>
+    <string name="doctorInfo_testSex">保密</string>
+    <string name="doctorInfo_testAge">20</string>
+    <string name="doctorInfo_testTitle">小菜鸟</string>
+    <string name="doctorInfo_testWorkTime">1星期</string>
+    <string name="doctorInfo_testContact">15200612967</string>
+    <string name="doctorInfo_testIntroduction">连续三年没拿到全国优秀医生，2011年发表第一篇高水平的医学论文，受到村委民众的一致赞誉</string>
+    <string name="doctorInfo_starLevel">星级</string>
+    <string name="doctorInfo_star">4.9/5</string>
+
+
+    <string name="doctorInfo_edit">编辑</string>
+
+    <!--announceActivity -->
+    <string name="announce_current">当前公告</string>
+    <string name="announce_currentContent">巴拉巴拉巴拉巴拉</string>
+    <string name="announce_new">新建公告</string>
+    <string name="announce_restrict">多行输入（至多200字）</string>
+    <string name="announce_release">发布新公告</string>
+
+    <!--prescription -->
+    <string name="prescription_date">日期</string>
+    <string name="prescription_num">病例总数</string>
+
+    <!--patient -->
+    <string name="patient_id">ID</string>
+    <string name="patient_name">姓名</string>
+
+    <!--record -->
+    <string name="record_name">姓名</string>
+    <string name="record_sex">性别</string>
+    <string name="record_age">年龄</string>
+    <string name="record_time">就医时间</string>
+    <string name="record_description">病情描述</string>
+    <string name="record_picture">处方照</string>
+    <string name="record_learn_more">了解更多</string>
+
+    <!--doctorMain -->
+    <string name="doctor_main_prescriptions">处方集</string>
+    <string name="doctor_main_patient_list">病人列表</string>
+    <string name="doctor_main_edit">编辑公共</string>
+    <string name="doctor_main_busy">忙碌</string>
+    <string name="doctor_main_idle">空闲</string>
+    <string name="doctor_main_status">工作状态</string>
+    <string name="doctor_main_publish">发布</string>
+
+
+</resources>
