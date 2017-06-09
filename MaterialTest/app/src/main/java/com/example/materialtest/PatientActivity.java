@@ -9,7 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.materialtest.myPackage.Patient;
+import com.example.materialtest.myPackage.PatientManager;
 
 import java.util.List;
 

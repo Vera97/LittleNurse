@@ -16,8 +16,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.materialtest.myPackage.Fruit;
+import com.example.materialtest.myPackage.FruitAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -162,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "You clicked Delete", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.logIn:
-                Toast.makeText(this, "You clicked Settings", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
                 break;

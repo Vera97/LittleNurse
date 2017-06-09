@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.materialtest.myPackage.PrescriptionDetail;
+import com.example.materialtest.myPackage.PrescriptionDetailManager;
+
 import java.util.List;
 
 public class PrescriptionDetailActivity extends AppCompatActivity {
