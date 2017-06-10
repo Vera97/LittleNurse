@@ -26,12 +26,6 @@
             android:layout_height="wrap_content"
             android:text="@string/patient_name"
             style="@style/textViewStyle"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="了解更多"
-            style="@style/learnMoreBtnStyle"/>
 
     </LinearLayout>
     <LinearLayout

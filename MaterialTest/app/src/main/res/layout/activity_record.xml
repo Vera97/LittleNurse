@@ -57,48 +57,20 @@
             android:text="@string/record_learn_more"
             style="@style/learnMoreBtnStyle"
             android:layout_weight="1"
-            android:layout_gravity="right"/>
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/record_sex"
-        style="@style/textViewStyle"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/record_age"
-        style="@style/textViewStyle"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/record_time"
-        style="@style/textViewStyle"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/record_description"
-            style="@style/textViewStyle"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/announce_currentContent"
-            style="@style/textViewFieldStyle"/>
+            android:layout_gravity="right"
+            android:id="@+id/learnMore"/>
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/record_picture"
         style="@style/textViewStyle"/>
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/dog"
-        android:layout_weight="1" />
+        android:layout_height="match_parent"
+        android:src="@drawable/sample"
+        android:id="@+id/imageView" />
 
 
 </LinearLayout>

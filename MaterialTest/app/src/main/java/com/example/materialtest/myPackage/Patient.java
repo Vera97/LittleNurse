@@ -4,20 +4,20 @@ package com.example.materialtest.myPackage;
 public class Patient {
     private int id;
     private String name;
+    private int imageId;
 
-    public int getId() {
+    public Patient(int id, String name, int imageId){
+        this.id = id;
+        this.name = name;
+        this.imageId = imageId;
+    }
+    public int getId(){
         return id;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
+    public String getName(){
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public int getImageId(){
+        return imageId;
     }
 }

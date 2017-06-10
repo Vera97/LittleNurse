@@ -1,47 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              >
-    <LinearLayout
-        android:id="@+id/patient_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/white"
-        android:padding="5dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/patient_id"
-        android:layout_width="0dp"
+    <ImageView
+        android:id="@+id/patient_image"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="id"
-        style="@style/textViewStyle"/>
+        android:padding="5dp"/>
+
     <TextView
         android:id="@+id/patient_name"
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="姓名"
-        style="@style/textViewStyle"/>
-    <Button
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:text="了解更多"
-        style="@style/learnMoreBtnStyle"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/patient_info">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey"/>
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>
