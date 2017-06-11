@@ -3,6 +3,7 @@
     package="com.example.materialtest">
 
     <application
+        android:name="com.example.materialtest.myPackage.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -51,6 +52,6 @@
             android:name=".DoctorMainActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".PatientInfoActivity"></activity>
-    </application>
 
+    </application>
 </manifest>

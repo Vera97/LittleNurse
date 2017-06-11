@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_app">#dedede</color>
+    <color name="background_list_back">#e3e3e3</color>
+    <color name="background_list_front">#ffffff</color>
+    <color name="line">#ffbcbcbc</color>
+    <color name="text_description">#7e7e7e</color>
+    <color name="text_title">#444444</color>
+    <dimen name="font_size_description">15sp</dimen>
+    <dimen name="font_size_title">17sp</dimen>
+    <dimen name="height_list">90dp</dimen>
+    <dimen name="line_default">1dp</dimen>
+    <dimen name="margin_default">5dp</dimen>
+    <dimen name="margin_setting">20dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="radius_default">3dp</dimen>
+    <dimen name="size_list_image">64dp</dimen>
+    <string name="about">About</string>
+    <string name="aboutMessage">This is just a simple demo for the Open Source SwipeListView Android Library by 47 Degrees. Find all source, documentation and packaged downloads at GitHub. Cheers!</string>
+    <string name="animationTime">Animation Time (Default: 0)</string>
+    <string name="appName">SwipeListView Demo</string>
+    <string name="both">Both</string>
+    <string name="cantOpen">Can\'t open this application</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="dontShow">Don\'t show this message again</string>
+    <string name="dp">dp</string>
+    <string name="goToGitHub">Go to GitHub</string>
+    <string name="googlePlay">Google Play</string>
+    <string name="left">Left</string>
+    <string name="leftAction">Left Action</string>
+    <string name="leftOffset">Left Offset (%1$s dp)</string>
+    <string name="loading">Loading</string>
+    <string name="milliseconds">Milliseconds</string>
+    <string name="mode">Swipe Mode</string>
+    <string name="ok">Ok</string>
+    <string name="open">Open</string>
+    <string name="openOnLongPress">Open On Long Press</string>
+    <string name="others">Others</string>
+    <string name="reveal">Reveal</string>
+    <string name="right">Right</string>
+    <string name="rightAction">Right Action</string>
+    <string name="rightOffset">Right Offset (%1$s dp)</string>
+    <string name="settings">Settings</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="visit47">Visit 47deg</string>
+    <style name="Line">
+        <item name="android:background">@color/line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/line_default</item>
+    </style>
+    <style name="ListBackContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_list</item>
+        <item name="android:background">@drawable/background_item</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="ListButtonAction">
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <style name="ListDescription">
+        <item name="android:textColor">@color/text_description</item>
+        <item name="android:textSize">@dimen/font_size_description</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ListFrontContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_list</item>
+        <item name="android:background">@color/background_list_front</item>
+        <item name="android:padding">@dimen/padding_default</item>
+    </style>
+    <style name="ListImage">
+        <item name="android:layout_width">@dimen/size_list_image</item>
+        <item name="android:layout_height">@dimen/size_list_image</item>
+        <item name="android:scaleGravity">fill</item>
+        <item name="android:layout_marginRight">@dimen/padding_default</item>
+    </style>
+    <style name="ListTitle">
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">@dimen/font_size_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="SettingContent">
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+        <item name="android:layout_marginLeft">@dimen/margin_setting</item>
+    </style>
+    <style name="SettingText">
+        <item name="android:textColor">@color/text_description</item>
+        <item name="android:textSize">@dimen/font_size_description</item>
+        <item name="android:layout_marginRight">@dimen/margin_default</item>
+    </style>
+    <style name="SettingTitle">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">@dimen/font_size_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.SwipeListView" parent="android:style/Theme.Light">
+    </style>
+</resources>

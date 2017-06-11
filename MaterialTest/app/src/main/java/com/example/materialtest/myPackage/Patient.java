@@ -20,4 +20,5 @@ public class Patient {
     public int getImageId(){
         return imageId;
     }
+
 }

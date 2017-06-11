@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Documents\\GitHub\\LittleNurse\\android-swipelistview-sample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\settings_activity.xml",
+        "source": "D:\\Documents\\GitHub\\LittleNurse\\android-swipelistview-sample\\app\\src\\main\\res\\layout\\settings_activity.xml"
+    },
+    {
+        "merged": "D:\\Documents\\GitHub\\LittleNurse\\android-swipelistview-sample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\swipe_list_view_activity.xml",
+        "source": "D:\\Documents\\GitHub\\LittleNurse\\android-swipelistview-sample\\app\\src\\main\\res\\layout\\swipe_list_view_activity.xml"
+    },
+    {
+        "merged": "D:\\Documents\\GitHub\\LittleNurse\\android-swipelistview-sample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\package_row.xml",
+        "source": "D:\\Documents\\GitHub\\LittleNurse\\android-swipelistview-sample\\app\\src\\main\\res\\layout\\package_row.xml"
+    }
+]
