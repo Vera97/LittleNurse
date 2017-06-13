@@ -184,6 +184,7 @@
                     android:text="@string/doctorInfo_introduction"
                     android:layout_marginBottom="5dp"/>
                 <EditText
+                    android:id="@+id/doctorInfo_intro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:minHeight="100dp"

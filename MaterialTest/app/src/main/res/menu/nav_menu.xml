@@ -16,10 +16,10 @@
         <item
             android:id="@+id/nav_notice"
             android:icon="@drawable/notice"
-            android:title="发布消息" />
+            android:title="发布公告" />
         <item
             android:id="@+id/nav_task"
-            android:icon="@drawable/nav_task"
+            android:icon="@drawable/camara"
             android:title="Tasks" />
     </group>
 </menu>

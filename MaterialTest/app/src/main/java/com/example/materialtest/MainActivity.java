@@ -1,6 +1,7 @@
 package com.example.materialtest;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -17,10 +18,21 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.materialtest.db.Doctor;
+import com.example.materialtest.db.Notice;
+import com.example.materialtest.db.Patient;
+import com.example.materialtest.db.Prescription;
+import com.example.materialtest.db.Treat;
 import com.example.materialtest.myPackage.Fruit;
 import com.example.materialtest.myPackage.FruitAdapter;
+
+import org.litepal.LitePal;
+import org.litepal.crud.DataSupport;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,12 +41,6 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
-
-    private Fruit[] fruits = {new Fruit("Apple", R.drawable.apple), new Fruit("Banana", R.drawable.banana),
-            new Fruit("Orange", R.drawable.orange), new Fruit("Watermelon", R.drawable.watermelon),
-            new Fruit("Pear", R.drawable.pear), new Fruit("Grape", R.drawable.grape),
-            new Fruit("Pineapple", R.drawable.pineapple), new Fruit("Strawberry", R.drawable.strawberry),
-            new Fruit("Cherry", R.drawable.cherry), new Fruit("Mango", R.drawable.mango)};
 
     private List<Fruit> fruitList = new ArrayList<>();
 
@@ -46,7 +52,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("MainActivity","hello MainActivity");
+
+        SharedPreferences pref = getSharedPreferences("data", MODE_PRIVATE);
+        final String name = pref.getString("account", "");
+        Log.d("MainActivity", "The current user is " + name);
+        WebView webView = (WebView) findViewById(R.id.web_view);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("http://ped.cmt.com.cn/");
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -59,11 +73,19 @@ public class MainActivity extends AppCompatActivity {
         navView.setCheckedItem(R.id.nav_pi);
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(MenuItem item)
-            {
+            public boolean onNavigationItemSelected(MenuItem item) {
+                List<Doctor> doctors = DataSupport.findAll(Doctor.class);
+                for (Doctor doctor : doctors) {
+                    if (doctor.getName().equals(name)) {
+                        TextView nameText = (TextView) findViewById(R.id.mail);
+                        nameText.setText(doctor.getName());
+                        TextView phoneText = (TextView) findViewById((R.id.username));
+                        phoneText.setText(doctor.getPhone());
+                    }
+                }
                 int choice = item.getItemId();
                 Intent intent;
-                switch (choice){
+                switch (choice) {
                     case R.id.nav_pi:
                         intent = new Intent(MainActivity.this, DoctorInfoShowActivity.class);
                         startActivity(intent);
@@ -73,51 +95,51 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.nav_prescription:
-                        intent = new Intent(MainActivity.this, PrescriptionActivity.class);
+                        intent = new Intent(MainActivity.this, PrescriptionsActivity.class);
                         startActivity(intent);
                         break;
                     case R.id.nav_notice:
                         intent = new Intent(MainActivity.this, AnnounceActivity.class);
                         startActivity(intent);
                         break;
-                    default:
-                        intent = new Intent(MainActivity.this, RecordActivity.class);
+                    case R.id.nav_task:
+                        intent = new Intent(MainActivity.this, TaskActivity.class);
                         startActivity(intent);
                         break;
                 }
                 return true;
             }
         });
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Data deleted", Snackbar.LENGTH_SHORT)
-                        .setAction("Undo", new View.OnClickListener() {
+                Snackbar.make(view, "取消", Snackbar.LENGTH_SHORT)
+                        .setAction("发布工作状态", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(MainActivity.this, "Data restored", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "您已发布当前状态为：工作", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .show();
             }
         });
-        initFruits();
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
-        recyclerView.setLayoutManager(layoutManager);
-        adapter = new FruitAdapter(fruitList);
-        recyclerView.setAdapter(adapter);
-        swipeRefresh = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh);
-        swipeRefresh.setColorSchemeResources(R.color.colorPrimary);
-        swipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+       /* FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab_idle);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onRefresh() {
-                refreshFruits();
+            public void onClick(View view) {
+                Snackbar.make(view, "取消", Snackbar.LENGTH_SHORT)
+                        .setAction("发布空闲状态", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Toast.makeText(MainActivity.this, "您已发布当前状态为：空闲", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .show();
             }
-        });
+        });*/
     }
-
     private void refreshFruits() {
         new Thread(new Runnable() {
             @Override
@@ -130,22 +152,12 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        initFruits();
                         adapter.notifyDataSetChanged();
                         swipeRefresh.setRefreshing(false);
                     }
                 });
             }
         }).start();
-    }
-
-    private void initFruits() {
-        fruitList.clear();
-        for (int i = 0; i < 50; i++) {
-            Random random = new Random();
-            int index = random.nextInt(fruits.length);
-            fruitList.add(fruits[index]);
-        }
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

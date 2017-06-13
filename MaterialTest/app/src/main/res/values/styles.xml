@@ -8,17 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="FruitActivityTheme" parent="AppTheme">
-    </style>
+    <style name="FruitActivityTheme" parent="AppTheme"></style>
 
-    <style name="AppTheme.NoActionBar" >
+    <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="title">
         <item name="android:textColor">@color/white</item>
@@ -28,6 +27,7 @@
     <style name="btn_sign_text_clicked">
         <item name="android:textColor">@color/white</item>
     </style>
+
     <style name="btn_sign_text_default">
         <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
@@ -49,6 +49,7 @@
         <item name="android:paddingBottom">0dp</item>
 
     </style>
+
     <style name="searchEditTextStyle">
 
         <item name="android:textSize">15dp</item>
@@ -57,6 +58,7 @@
         <item name="android:background">@null</item>
         <item name="android:minHeight">30dp</item>
     </style>
+
     <style name="textViewStyle">
         <item name="android:layout_marginLeft">8dp</item>
         <item name="android:layout_marginRight">8dp</item>
@@ -84,7 +86,6 @@
     </style>
 
 
-
     <style name="loginTextStyle">
         <item name="android:textColor">@drawable/clickable_text_selector</item>
         <item name="android:textSize">15dp</item>
@@ -106,6 +107,7 @@
         <item name="android:layout_margin">2dp</item>
         <item name="android:minHeight">20dp</item>
     </style>
+
     <style name="commonAgentStyle1">
         <item name="android:textSize">15dp</item>
         <item name="android:background">@color/white</item>
@@ -148,6 +150,7 @@
         <item name="android:textSize">15dp</item>
         <item name="android:minHeight">80dp</item>
     </style>
+
     <style name="anotherBtnStyle">
         <item name="android:textSize">15dp</item>
         <item name="android:background">@color/white</item>

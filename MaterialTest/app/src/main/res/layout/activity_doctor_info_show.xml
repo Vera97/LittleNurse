@@ -81,7 +81,7 @@
                     android:layout_weight="1"
                     style="@style/textViewStyle"/>
                 <TextView
-                    android:id="@+id/nameText"
+                    android:id="@+id/myName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
@@ -98,9 +98,9 @@
                     android:layout_weight="1"
                     style="@style/textViewStyle"/>
                 <TextView
+                    android:id="@+id/myGender"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/doctorInfo_testSex"
                     android:layout_weight="4"
                     style="@style/textViewStyle"/>
             </LinearLayout>
@@ -115,9 +115,9 @@
                     android:layout_weight="1"
                     style="@style/textViewStyle"/>
                 <TextView
+                    android:id="@+id/myAge"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/doctorInfo_testAge"
                     android:layout_weight="4"
                     style="@style/textViewStyle"/>
             </LinearLayout>
@@ -131,9 +131,9 @@
                     android:layout_weight="1"
                     style="@style/textViewStyle"/>
                 <TextView
+                    android:id="@+id/myTitle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/doctorInfo_testTitle"
                     android:layout_weight="4"
                     style="@style/textViewStyle"/>
             </LinearLayout>
@@ -147,9 +147,9 @@
                     android:layout_weight="1"
                     style="@style/textViewStyle"/>
                 <TextView
+                    android:id="@+id/myWorkTime"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/doctorInfo_testWorkTime"
                     android:layout_weight="4"
                     style="@style/textViewStyle"/>
             </LinearLayout>
@@ -163,9 +163,9 @@
                     android:layout_weight="1"
                     style="@style/textViewStyle"/>
                 <TextView
+                    android:id="@+id/myPhone"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/doctorInfo_testContact"
                     android:layout_weight="4"
                     style="@style/textViewStyle"/>
             </LinearLayout>
@@ -180,9 +180,9 @@
                     android:layout_weight="1"
                     style="@style/textViewStyle"/>
                 <TextView
+                    android:id="@+id/myIntro"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/doctorInfo_testIntroduction"
                     android:minHeight="40dp"
                     android:ellipsize="end"
                     android:layout_weight="4"
@@ -200,9 +200,9 @@
                     style="@style/textViewStyle"
                     android:layout_weight="1"/>
                 <TextView
+                    android:id="@+id/myStar"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/doctorInfo_star"
                     style="@style/textViewStyle"
                     android:layout_weight="4"/>
             </LinearLayout>

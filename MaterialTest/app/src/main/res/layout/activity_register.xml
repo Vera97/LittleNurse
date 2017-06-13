@@ -105,6 +105,7 @@
                     android:id="@+id/register_psd"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:inputType="textPassword"
                     style="@style/textStyle"
                     android:layout_weight="4"
                     />
@@ -122,6 +123,7 @@
                     android:id="@+id/register_confirm_psd"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:inputType="textPassword"
                     style="@style/textStyle"
                     android:layout_weight="4"
                     />
@@ -163,12 +165,23 @@
                     />
 
                 <Button
+                    android:id="@+id/getcord"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:text="@string/register_get_verify"
                     style="@style/btnStyle"
                     />
+                <TextView
+                    android:id="@+id/now"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/savecord"
+                    android:layout_toRightOf="@+id/cord"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:text="提示信息"
+                    android:textColor="#aaaaaa" />
 
 
             </LinearLayout>

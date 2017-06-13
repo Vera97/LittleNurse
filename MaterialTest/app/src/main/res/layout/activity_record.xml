@@ -48,7 +48,13 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/record_name"
+            android:text="病人ID"
+            style="@style/textViewStyle"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/record_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             style="@style/textViewStyle"
             android:layout_weight="1"/>
         <Button

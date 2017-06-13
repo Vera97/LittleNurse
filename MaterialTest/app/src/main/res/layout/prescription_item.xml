@@ -1,41 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-    >
-    <LinearLayout
-        android:id="@+id/patient_info"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.materialtest.myPackage.SwipeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/white"
-        android:padding="5dp">
-
-        <TextView
-            android:id="@+id/prescription_date"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="@string/prescription_date"
-            style="@style/textViewStyle"/>
-        <TextView
-            android:id="@+id/prescription_num"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/prescription_num"
-            style="@style/textViewStyle"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/patient_info">
-        <TextView
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/font"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/grey"/>
-    </LinearLayout>
+            android:layout_height="50dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/prescription_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/prescription"/>
 
-</RelativeLayout>
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/textViewStyle"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:text= "2017-01-01 20:18"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <RelativeLayout
+                android:id="@+id/delete_button"
+                android:clickable="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#ff0000">
+                <View
+                    android:layout_centerInParent="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/trash"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.example.materialtest.myPackage.SwipeLayout>
+</LinearLayout>

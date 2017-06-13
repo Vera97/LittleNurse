@@ -78,6 +78,7 @@
     <string name="doctor_main_idle">空闲</string>
     <string name="doctor_main_status">工作状态</string>
     <string name="doctor_main_publish">发布</string>
+    <string name="title_activity_task">TaskActivity</string>
 
 
 </resources>

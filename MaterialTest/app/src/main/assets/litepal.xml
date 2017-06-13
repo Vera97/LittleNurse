@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="little_nurse"/>
+    <version value="5"/>
+    <list>
+        <mapping class="com.example.materialtest.db.Doctor"/>
+        <mapping class="com.example.materialtest.db.Patient"/>
+        <mapping class="com.example.materialtest.db.Prescription"/>
+        <mapping class="com.example.materialtest.db.Treat"/>
+        <mapping class="com.example.materialtest.db.Notice"/>
+        <mapping class="com.example.materialtest.db.Album"/>
+    </list>
+</litepal>
